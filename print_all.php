@@ -10,13 +10,13 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(50,10,'Date:'.date('d-m-Y').'',0,"R");
 $pdf->Ln(15);
 $pdf->SetFont('Arial','B',16);
-$pdf->Cell(0,10,'USERS',1,1,"C");
+$pdf->Cell(0,10,'Usuarios',1,1,"C");
 $pdf->SetFont('Arial','B',12);
 $pdf->Cell(10,8,'No.',1);
-$pdf->Cell(45,8,'First Name',1);
-$pdf->Cell(45,8,'Middle Name',1);
-$pdf->Cell(45,8,'Last Name',1);
-$pdf->Cell(45,8,'Birth Date',1);
+$pdf->Cell(45,8,'Nombre',1);
+$pdf->Cell(45,8,'Apellido',1);
+$pdf->Cell(45,8,'Segundo Apellido',1);
+$pdf->Cell(45,8,'Fecha Nacimiento',1);
 
 $query="SELECT * FROM users";
 $result = mysqli_query($mysqli, $query);
